@@ -20,6 +20,9 @@ console.log(Integer.of((0.1 + 0.2) * 10));
 console.log(Integer.of((0.1 + 0.2) * -10));
 console.log(Integer.of((0.1 + 0.7) * 10));
 console.log(Integer.of((-0.1 - 0.7) * 10));
+console.log(Integer.of(12) + 3.14);
+console.log((123.456).toInteger() + 241);
+console.log(Number.ofInteger(345.789) + 456);
 
 const add = (a: integer, b: integer) => a + b;
 
