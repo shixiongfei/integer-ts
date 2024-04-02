@@ -44,12 +44,12 @@ declare global {
   }
 }
 
-Number.prototype.toInteger = function (this: number) {
-  return Integer.of(this);
-};
-
 Number.ofInteger = function (value: number) {
   return Integer.of(value);
+};
+
+Number.prototype.toInteger = function (this: number) {
+  return Integer.of(this);
 };
 
 export default Integer;
