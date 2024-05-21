@@ -23,53 +23,53 @@ test("that int(NaN) is equal 0", () => {
 });
 
 test("that int(Infinity) is equal Number.MAX_SAFE_INTEGER", () => {
-  assert.strictEqual(int(Infinity), Number.MAX_SAFE_INTEGER);
+  assert.strictEqual(Number.MAX_SAFE_INTEGER, int(Infinity));
 });
 
 test("that int(-Infinity) is equal Number.MIN_SAFE_INTEGER", () => {
-  assert.strictEqual(int(-Infinity), Number.MIN_SAFE_INTEGER);
+  assert.strictEqual(Number.MIN_SAFE_INTEGER, int(-Infinity));
 });
 
 test("that int(123) is equal 123", () => {
-  assert.strictEqual(int(123), 123);
+  assert.strictEqual(123, int(123));
 });
 
 test("that int(3.14) is equal 3", () => {
-  assert.strictEqual(int(3.14), 3);
+  assert.strictEqual(3, int(3.14));
 });
 
 test("that int((0.1 + 0.2) * 10) is equal 3", () => {
-  assert.strictEqual(int((0.1 + 0.2) * 10), 3);
+  assert.strictEqual(3, int((0.1 + 0.2) * 10));
 });
 
 test("that int((0.1 + 0.2) * -10) is equal -3", () => {
-  assert.strictEqual(int((0.1 + 0.2) * -10), -3);
+  assert.strictEqual(-3, int((0.1 + 0.2) * -10));
 });
 
 test("that int((0.1 + 0.7) * 10) is equal 8", () => {
-  assert.strictEqual(int((0.1 + 0.7) * 10), 8);
+  assert.strictEqual(8, int((0.1 + 0.7) * 10));
 });
 
 test("that int((-0.1 - 0.7) * 10) is equal -8", () => {
-  assert.strictEqual(int((-0.1 - 0.7) * 10), -8);
+  assert.strictEqual(-8, int((-0.1 - 0.7) * 10));
 });
 
 test("that int(12) + 3.14 is equal 15.14", () => {
-  assert.strictEqual(int(12) + 3.14, 15.14);
+  assert.strictEqual(15.14, int(12) + 3.14);
 });
 
 test("that (123.456).toInteger() + 241 is equal 364", () => {
-  assert.strictEqual((123.456).toInteger() + 241, 364);
+  assert.strictEqual(364, (123.456).toInteger() + 241);
 });
 
 test("that (345.678 + 456.789).toInteger() is equal 802", () => {
-  assert.strictEqual((345.678 + 456.789).toInteger(), 802);
+  assert.strictEqual(802, (345.678 + 456.789).toInteger());
 });
 
 test("that add(Integer(2), Integer(3)) is equal 5", () => {
-  assert.strictEqual(add(Integer(2), Integer(3)), 5);
+  assert.strictEqual(5, add(Integer(2), Integer(3)));
 });
 
 test("that Integer(12.34) + Integer(34.56) is equal 46", () => {
-  assert.strictEqual(Integer(12.34) + Integer(34.56), 46);
+  assert.strictEqual(46, Integer(12.34) + Integer(34.56));
 });
