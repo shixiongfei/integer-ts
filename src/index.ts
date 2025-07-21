@@ -18,7 +18,7 @@ export const Integer = function (value: number): integer {
   }
 
   if (Number.isFinite(value)) {
-    return Math.floor(Math.round(value * 10) / 10) as integer;
+    return (value | 0) as integer;
   }
 
   if (value === Number.POSITIVE_INFINITY) {

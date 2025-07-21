@@ -2,4 +2,4 @@
 
 [![NPM Version](https://img.shields.io/npm/v/integer-ts)](https://www.npmjs.com/package/integer-ts)
 
-Integer type in TypeScript
+Integer(32bit) type in TypeScript
