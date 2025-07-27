@@ -22,12 +22,20 @@ test("that int(NaN) is equal 0", () => {
   assert.strictEqual(int(NaN), 0);
 });
 
-test("that int(Infinity) is equal Number.MAX_SAFE_INTEGER", () => {
-  assert.strictEqual(Number.MAX_SAFE_INTEGER, int(Infinity));
+test("that int(Infinity) is equal 0", () => {
+  assert.strictEqual(0, int(Infinity));
 });
 
-test("that int(-Infinity) is equal Number.MIN_SAFE_INTEGER", () => {
-  assert.strictEqual(Number.MIN_SAFE_INTEGER, int(-Infinity));
+test("that int(-Infinity) is equal 0", () => {
+  assert.strictEqual(0, int(-Infinity));
+});
+
+test("that Integer.MAX_INTEGER is equal 2147483647", () => {
+  assert.strictEqual(2147483647, Integer.MAX_INTEGER);
+});
+
+test("that Integer.MIN_INTEGER is equal -2147483648", () => {
+  assert.strictEqual(-2147483648, Integer.MIN_INTEGER);
 });
 
 test("that int(123) is equal 123", () => {
