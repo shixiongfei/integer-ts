@@ -38,6 +38,10 @@ test("that int(3.14) is equal 3", () => {
   assert.strictEqual(3, int(3.14));
 });
 
+test("that int(0xffffffff) is equal -1", () => {
+  assert.strictEqual(-1, int(0xffffffff));
+});
+
 test("that int(12) + 3.14 is equal 15.14", () => {
   assert.strictEqual(15.14, int(12) + 3.14);
 });

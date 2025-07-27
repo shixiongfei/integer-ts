@@ -13,10 +13,6 @@ const __integer_type__ = Symbol();
 export type integer = number & { readonly [__integer_type__]: unique symbol };
 
 export const Integer = function (value: number): integer {
-  if (Number.isInteger(value)) {
-    return value as integer;
-  }
-
   if (Number.isFinite(value)) {
     return (value | 0) as integer;
   }
