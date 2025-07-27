@@ -1,7 +1,7 @@
 {
   "name": "integer-ts",
-  "version": "0.3.0",
-  "description": "Integer type in TypeScript",
+  "version": "0.3.1",
+  "description": "Integer(32bit) type in TypeScript",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
@@ -28,10 +28,10 @@
   },
   "homepage": "https://github.com/shixiongfei/integer-ts#readme",
   "devDependencies": {
-    "@types/node": "^24.0.15",
-    "@typescript-eslint/eslint-plugin": "^8.37.0",
-    "@typescript-eslint/parser": "^8.37.0",
-    "eslint": "^9.31.0",
+    "@types/node": "^24.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
+    "@typescript-eslint/parser": "^8.38.0",
+    "eslint": "^9.32.0",
     "prettier": "^3.6.2",
     "typescript": "^5.8.3"
   }
